@@ -1,0 +1,16 @@
+{
+  "files.exclude": {
+    "node_modules": true,
+    ".gitignore": true,
+    ".npmrc": true,
+    ".eslintrc.cjs": true,
+    "package-lock.json": true,
+    ".history/": true,
+    ".prettierrc": true,
+    "package.json": true,
+    "playwright.config.js": true,
+    "postcss.config.cjs": true,
+    
+
+  }
+}
