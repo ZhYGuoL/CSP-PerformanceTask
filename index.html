@@ -1,0 +1,43 @@
+<html>
+<head>
+	<title>Convex Hull Visualizer</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link id="cssTheme" rel="stylesheet" href="index_style.css"/>
+	<link rel="shortcut icon" href="images/logo.ico">
+</head>
+<body>
+
+	<li class="dropdown" id="context-menu" style="list-style-type:none">
+		<ul class="dropdown-menu" style="list-style-type:none">
+			<li id='deleteButton' onclick="DeleteNode()"><a>Delete Node<span class="glyphicon glyphicon-trash"></span></a></li>
+		</ul>
+	</li>
+
+    <div id="sandbox"></div>
+	<svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="path-container"></svg>
+</body>
+
+<!-- Dependencies -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="anime-master/lib/anime.min.js"></script>
+<script src="jscolor.js"></script>
+
+<script type="text/javascript" src="Point.js"></script>
+<script type="text/javascript" src="EventListener.js"></script>
+
+<!--Algorithms-->
+<script type="text/javascript" src="Algorithms/GiftWrapping.js"></script>
+<script type="text/javascript" src="Algorithms/GrahamScan.js"></script>
+<script type="text/javascript" src="Algorithms/Quickhull.js"></script>
+<script type="text/javascript" src="Algorithms/DAC.js"></script>
+<script type="text/javascript" src="Algorithms/MonotoneChain.js"></script>
+<script type="text/javascript" src="Algorithms/ChansAlgorithm.js"></script>
+
+<!--Animation Controls-->
+<script type="text/javascript" src="Algorithms/Visuals.js"></script>
+
+<!--color change-->
+<script type="text/javascript" src="Colors.js"></script>
+</html>
