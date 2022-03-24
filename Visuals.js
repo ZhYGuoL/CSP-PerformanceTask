@@ -41,19 +41,19 @@ function AnimateLine(pathElement){
 		direction: 'alternate',
 		loop: false
     });
-
+	
     setTimeout(function(){ return }, 3000);
 }
 
 function MakeNewPath(p1, p2){
 	var svg_container = document.getElementById("path-container");
 	var newPath = document.createElementNS("http://www.w3.org/2000/svg", "path");
-
+	
 	var x1 = p1.x + 10;
 	var y1 = p1.y + 12;
 	var x2 = p2.x + 10;
 	var y2 = p2.y + 12;
-
+	
 	var path_d = "M " + x1 + "," + y1 + " L " + x2 + "," + y2;
 
 	//set path attributes
