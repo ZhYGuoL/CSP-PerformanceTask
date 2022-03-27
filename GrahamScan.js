@@ -36,7 +36,6 @@ function ccw(a, b, c) {
 
 /**
  * @return {*} Graham scan 
- * @
  */
 function ConvexHull_GrahamScale() {
 	points = []
@@ -69,33 +68,35 @@ function ConvexHull_GrahamScale() {
 	let pointIndex = 0;
 	let done = 0;
 
-	// while(done != points.length){
-	//   	let p = sort_by_polar_angle[pointIndex];
-	//   	if (p) {
-	//     	if (hull.length > 1 && ccw(hull[hull.length - 2], hull[hull.length - 1], p)) {
-	//       		hull.pop();
-	//     	}
-	//     	else{
-	//       		hull.push(p);
-	// 			pointIndex++;
-	// 			done++;
-	//     	}
-	//     }
-	//     else{
-	//     	//closing line
-	//     	//hull[hull.length] to hull[0]
-	//     	continue;
-	//     }
-	// }
+	while(done != points.length){
+	  	let p = sort_by_polar_angle[pointIndex];
+	  	if (p) {
+	    	if (hull.length > 1 && ccw(hull[hull.length - 2], hull[hull.length - 1], p)) {
+	      		hull.pop();
+	    	}
+	    	else{
+	      		hull.push(p);
+				pointIndex++;
+				done++;
+	    	}
+	    }
+	    else{
+	    	//closing line
+	    	//hull[hull.length] to hull[0]
+	    	continue;
+	    }
+	}
 
-	for (i = 0; i < points.length; i++) {
-		hull.append(points[i])
-		while (hull.length > 1 && ccw(hull[hull.length - 2], hull[hull.length - 1], p)) {
-			hull.pop();
-		}
+	console.log(points)
+
+	// for (i = 0; i < points.length; i++) {
+	// 	hull.append(points[i])
+	// 	while (hull.length > 1 && ccw(hull[hull.length - 2], hull[hull.length - 1], p)) {
+	// 		hull.pop();
+	// 	}
 
 		
-	}
+	// }
 
 	hull.forEach(el => point_html.get(el).className = "point-hull");
 	ConnectHull();

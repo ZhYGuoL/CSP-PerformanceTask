@@ -73,8 +73,8 @@ function AnimatePoint(node){
   		scale: [1, 1.3, 1],
   		duration: 800,
   		easing: 'easeInOutQuad',
-  		direction: 'alternate',
-  		loop: false
+		direction: 'alternate',
+		loop: false
 	});
 }
 
