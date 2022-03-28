@@ -5,22 +5,16 @@ function Visualize() {
 	//points array reset
 	//WeakMaps are not modified
 	Reset();
-
 	if(isRunning){
 		return;
 	}
-
 	if($('.point').length < 3){
 		return;
 	}
-
-
 	//false when algorithm is finished
 	//set false by Algorithm function itself (not here)
 	isRunning = true;
-
 	ConvexHull_GrahamScale()
-
 	UpdatePointCounters();
 }
 
