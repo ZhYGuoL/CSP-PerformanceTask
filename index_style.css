@@ -7113,21 +7113,27 @@ footer p {
 html, body {margin: 0; height: 100%; overflow: hidden}
 
 
-#navbarDiv {
-  width:100%;
+#instructions {
+  background: linear-gradient(140deg, rgb(207, 47, 152), rgb(106, 61, 236)); 
+  width: 100%; 
+  height: 10%;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+}
+
+#instructions a {
+  
 }
 
 
 /*main canvas Sandbox*/
 #sandbox{
 	position: static;
-	width: 98%;
-	height: 85%;
-	margin: 1%;
+	width: 100%;
+	height: 90%;
 	background-color: #fff;
 	z-index: 1;
-  left:1%;
-  top:7.5%;
 }
 
 
