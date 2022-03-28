@@ -1,0 +1,11 @@
+{
+    "files.exclude": {
+        ".vscode/": true,
+        ".history/":true,
+        "node_modules/":true,
+        ".gitignore": true,
+        "anime-master/": true,
+        "_config.yml": true,
+        "**/*.json": true
+    }
+}
