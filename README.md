@@ -4,3 +4,5 @@
 
 
 ### A website with an interactive 2D grid for the user to input coordinates, and an Graham scan algorithm to display the convex hull.
+
+<img src="Pseudocode.png"></img>
