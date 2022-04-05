@@ -1,0 +1,10 @@
+{
+    "files.exclude": {
+        "_config.yml": true,
+        ".history/": true,
+        ".vscode/": true,
+        "**/*.json": true,
+        "anime-master/": true,
+        "node_modules/": true
+    }
+}
