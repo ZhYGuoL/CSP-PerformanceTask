@@ -21,7 +21,7 @@ function rightTurn(a, b, c) {
 function ConvexHull_GrahamScale() {
 	points = [] //initialize list for coordinates of nodes (Stored in {x, y})
 	var nodes = $('.point'); // the parameter of the function is the nodes
-	for(var i = 0; i<nodes.length; i++){
+	for (var i = 0; i < nodes.length; i++) {
 		points.push(html_point.get(nodes[i]));	// gets coordinates and adds them to points[]
 	}
 	points.sort((a, b) => { // sort points[] from smallest to greatest x
