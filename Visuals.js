@@ -47,21 +47,21 @@ function disconnectTwoPoints(line){
 
 function changeTotalPointCount(total){
 	anime({
-	  targets: '#totalPoints',
-	  value: [0, total],
-	  round: 1,
-	  easing: 'easeInOutExpo',
-	  duration: 1000
+		targets: '#totalPoints',
+		value: [0, total],
+		round: 1,
+		easing: 'easeInOutExpo',
+		duration: 1000
 	});
 }
 
 function changeTotalHullCount(total){
 	anime({
-	  targets: '#totalHullPoints',
-	  value: [0, total],
-	  round: 1,
-	  easing: 'easeInOutExpo',
-	  duration: 1000
+		targets: '#totalHullPoints',
+		value: [0, total],
+		round: 1,
+		easing: 'easeInOutExpo',
+		duration: 1000
 	});
 }
 
@@ -96,18 +96,18 @@ function MakeNewPath(p1, p2){
 	newPath.setAttribute("fill", "green");
 	newPath.setAttribute("stroke", "gray");
 
-	svg_container.append(newPath); 
+	svg_container.append(newPath);
 	AnimateLine(newPath);
 }
 
 function AnimatePoint(node){
 	anime({
-  		targets: node,
-  		delay: -400,
-  		scale: [1, 1.3, 1],
-  		duration: 800,
-  		easing: 'easeInOutQuad',
-  		direction: 'alternate',
-  		loop: false
+		targets: node,
+		delay: -400,
+		scale: [1, 1.3, 1],
+		duration: 800,
+		easing: 'easeInOutQuad',
+		direction: 'alternate',
+		loop: false
 	});
 }
