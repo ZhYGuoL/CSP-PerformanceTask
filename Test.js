@@ -41,7 +41,3 @@ for (i = 0; i < points.length; i++) {
         hull.splice(hull.length - 2, 1);
     }
 }
-
-
-console.log(hull);
-
